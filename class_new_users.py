@@ -4,7 +4,7 @@ class New_Users():
         self.name = name
 
 
-   #read the txt file
+# be able to read the txt file
 
     def read_txt_files(file_name):
         try:
@@ -20,8 +20,21 @@ class New_Users():
         finally:
             print('//// Programme Finished - File Shown')
 
-
+# be able to write in the file
     def write_in_txt_file(file, item):
         try:
             with open(file, 'a') as file_to_write:
                 file_to_write.write(item + '\n')
+
+        except FileNotFoundError as error:
+            print('Check the file and path!!!')
+            print(error)
+
+        finally:
+            print('///Programme Executed -- written in file!')
+
+# get user information (name)
+
+    def get_name(self):
+        return self.name
+
