@@ -1,10 +1,8 @@
 
 # Task
 The object is to practice everything up to this point. 
-objectives: 
-
-- create a text file with 10 names
-
+objectives: - create a text file with 10 names
+ 
 - create a class for NewUsers()
     - it should only require 1 argument to be created, a name?
     
