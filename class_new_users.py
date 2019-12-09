@@ -5,11 +5,14 @@ class New_Users():
 
 
 
-# Creating a new text file with User names
+#Methods
 
     def new_file(file_name):
         create_file = open(file_name, 'w+')
         return create_file
+
+    def get_name(self):
+        return self.name
 
 
 
