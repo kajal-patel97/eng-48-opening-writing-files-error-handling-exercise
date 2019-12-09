@@ -1,14 +1,18 @@
-from class_new_users import *
+from class_new_users import  *
+from open_write_functions import *
 
-New_Users.write_in_txt_file('name.txt', '1. Beth')
-New_Users.write_in_txt_file('name.txt', '2. James')
-New_Users.write_in_txt_file('name.txt', '3. Scott')
-New_Users.write_in_txt_file('name.txt', '4. Sammy')
-New_Users.write_in_txt_file('name.txt', '5. Ashley')
-New_Users.write_in_txt_file('name.txt', '6. Brian')
-New_Users.write_in_txt_file('name.txt', '7. Stacey')
-New_Users.write_in_txt_file('name.txt', '8. Olivia')
-New_Users.write_in_txt_file('name.txt', '9. Mia')
-New_Users.write_in_txt_file('name.txt', '10. Jake')
+New_Users.new_file('Users.txt')
 
-New_Users.read_txt_files('name.txt')
+write_in_txt_file('Users.txt', '1. Beth')
+write_in_txt_file('Users.txt', '2. James')
+write_in_txt_file('Users.txt', '3. Scott')
+write_in_txt_file('Users.txt', '4. Sammy')
+write_in_txt_file('Users.txt', '5. Ashley')
+write_in_txt_file('Users.txt', '6. Brian')
+write_in_txt_file('Users.txt', '7. Stacey')
+write_in_txt_file('Users.txt', '8. Olivia')
+write_in_txt_file('Users.txt', '9. Mia')
+write_in_txt_file('Users.txt', '10. Jake')
+
+read_txt_files('name.txt')
+
