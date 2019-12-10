@@ -1,30 +1,13 @@
+from class_new_users import *
 
-# be able to read the txt file
+new_users = []
 
-def read_txt_files(file_name):
-    try:
-        with open(file_name, 'r') as file:
-            lines = file.readlines()
-            for line in lines:
-                print(line.strip())
+opened_file = open('name.txt', 'r')
+lines = opened_file.readlines()
+for line in lines:
+    new_users.append(New_Users(line))
+print(new_users)
+opened_file.close()
 
-    except FileNotFoundError as error:
-        print('Check if the file is created')
-        print(error)
+new_users[3].output_text_file('username1.txt', 23, 'Blue')
 
-    finally:
-         print('//// Programme Finished - File Shown')
-
-# be able to write in the file
-
-def write_in_txt_file(file,item):
-    try:
-        with open(file, 'a') as file_to_write:
-            file_to_write.write(item + '\n')
-
-    except FileNotFoundError as error:
-        print('Check the file and path!!!')
-        print(error)
-
-    finally:
-       print('///Programme Executed -- written in file!')

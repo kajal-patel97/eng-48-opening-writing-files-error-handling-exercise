@@ -7,12 +7,20 @@ class New_Users():
 
 #Methods
 
-    def new_file(file_name):
-        create_file = open(file_name, 'w+')
-        return create_file
+    def output_text_file(self,file_name,age, fav_colour):
+        try:
+            with open(file_name, 'w+') as file_to_create:
+                file_to_create.write(f'The name of this user is {self.name}'
+                                     f'The users age is {age}. '
+                                     f'Their favourite colour is {fav_colour}')
+        except TypeError as error:
+            print('Ensure you have printed all arguments')
+            print(error)
 
-    def get_name(self):
-        return self.name
+        finally:
+            print('Programme Closing - Execution done!')
+
+
 
 
 
